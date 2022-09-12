@@ -1,0 +1,23 @@
+.homeParent {
+  width: fit-content;
+  height: 160px;
+  margin-left: 175px;
+  margin-top: 250px;
+  text-align: center;
+}
+.child {
+  margin-top: 5px;
+}
+.skills {
+  margin-top: 60px;
+  text-align: center;
+}
+div ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 15px;
+  margin-top: 17px;
+}

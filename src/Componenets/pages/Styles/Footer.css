@@ -1,0 +1,12 @@
+.Footer {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 650px;
+  margin-top: 350px;
+}
+.icons a {
+  display: flex;
+  justify-content: space-between;
+  color: #d99330;
+  font-size: 2rem;
+}
