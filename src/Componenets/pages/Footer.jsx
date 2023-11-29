@@ -6,12 +6,19 @@ function Footer() {
   return (
     <footer className="Footer">
       <div className="icons">
-        <a href="https://github.com/minisodan">
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a>
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/masonmyles/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/minisodan">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   );
