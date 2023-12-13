@@ -21,6 +21,7 @@ function Portfolio() {
       .catch((error) => console.log(error));
   }, []);
 
+
   return (
     <div className="parent">
       <h1>!Currently Under Construction!</h1>
