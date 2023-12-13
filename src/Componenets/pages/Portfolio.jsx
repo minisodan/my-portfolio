@@ -1,30 +1,31 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Portfolio.css";
-import axios from 'axios';
 
 function Portfolio() {
-  const [repos, setRepos] = useState([]);
-  const axios = require('axios');
+  const [repo, setRepo] = useState();
 
   useEffect(() => {
-    axios.get('https://api.github.com/users/minisodan/repos', {
-      Authorization: `Client-ID `,
+    fetch("https://api.github.com/users/minisodan/repos", {
+      method: "GET",
     })
-    .then((responceData) => {
-      const repo = responceData.data;
-      console.log(repo);
-
-    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw response;
+      })
+      .then((data) => {
+        setRepo(data);
+        console.log(data);
+      })
+      .catch((error) => console.log(error));
   }, []);
 
 
   return (
     <div className="parent">
-      <div className="repos">
-      {repos}
-      </div>
+      <h1>!Currently Under Construction!</h1>
     </div>
   );
 }
-
 export default Portfolio;
