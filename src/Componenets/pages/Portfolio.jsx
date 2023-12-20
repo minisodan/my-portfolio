@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import "./Styles/Portfolio.css";
 
 const Portfolio = () => {
@@ -34,4 +35,5 @@ const Portfolio = () => {
     </>
   );
 }
+
 export default Portfolio;
