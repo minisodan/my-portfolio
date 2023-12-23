@@ -1,0 +1,25 @@
+.users{
+    display: grid;
+    grid-template-columns: 16rem 16rem 16rem 16rem 16rem;
+    align-content: center;
+    grid-gap: .7rem;
+}
+
+.repoCard li{
+    border: solid;
+    border-color: antiquewhite;
+    border-radius: 0.5rem;
+    padding: 15px;
+    height: 16rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
+    font-family: "consolas", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    margin: 0px 0 0;
+    padding: 0px 0 0;
+}
