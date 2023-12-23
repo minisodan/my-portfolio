@@ -1,6 +1,6 @@
 .users{
     display: grid;
-    grid-template-columns: 16rem 16rem 16rem 16rem 16rem;
+    grid-template-columns: 16rem 16rem 16rem 16rem;
     align-content: center;
     grid-gap: .7rem;
 }
