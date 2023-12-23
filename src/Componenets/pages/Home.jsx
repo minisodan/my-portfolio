@@ -14,12 +14,19 @@ function Home() {
             <li>- CSS</li>
             <li>- JavaScript</li>
             <li>- Java</li>
+            <li>- C#</li>
+          </ul>
+          <ul>
+            <li>- SQL</li>
+            <li>- LINQ</li>
+            <li>- .NET</li>
+            <li>- SpringBoot</li>
           </ul>
         </div>
       </div>
 
       <div className="immage">
-        <img src="picture/Mason.jpeg" alt="" />
+        <img src="Mason.jpeg" alt="" />
       </div>
     </div>
   );
