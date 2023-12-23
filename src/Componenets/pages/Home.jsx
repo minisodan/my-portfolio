@@ -5,7 +5,7 @@ function Home() {
     <div className="homeParent">
       <h2>Welcome to my website</h2>
       <div className="child">
-        <h1>Software Engineer</h1>
+        <h1>Backend Software Engineer</h1>
         <div className="skills">
           <h3>Current Skills</h3>
           <ul className="list">
