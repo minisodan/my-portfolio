@@ -3,8 +3,8 @@ import "../../picture/Mason.jpeg";
 function Home() {
   return (
     <div className="homeParent">
-      <h2>Welcome to my website</h2>
       <div className="child">
+      <h2>Welcome to my website</h2>
         <h1>Backend Software Engineer</h1>
         <div className="skills">
           <h3>Current Skills</h3>
@@ -25,7 +25,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="immage">
+      <div className="image">
         <img src="Mason.jpeg" alt="" />
       </div>
     </div>

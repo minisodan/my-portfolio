@@ -1,17 +1,30 @@
 .homeParent {
-  width: fit-content;
-  height: 160px;
-  margin-left: 175px;
-  margin-top: 250px;
+  height: auto;
+  justify-content: left;
+  margin: auto;
+  margin-top: 75px;
+}
+
+.homeParent h1{
+  margin-left: 50px;
   text-align: center;
 }
+
+.homeParent h2{
+  margin-left: 50px;
+  text-align: center;
+}
+
 .child {
   margin-top: 5px;
+  margin-left: 100px;
 }
+
 .skills {
   margin-top: 60px;
   text-align: center;
 }
+
 div ul {
   display: flex;
   justify-content: center;
