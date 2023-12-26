@@ -24,14 +24,13 @@ const Portfolio = () => {
         <br></br>
           <ul className='users'>
             {repos.map((user) => {
-              const { id, name, html_url, language, avatar_url } = user;
+              const { id, name, html_url, language, owner } = user;
               return (
                 <li key={id}>
-                  <div>
+                  <div className="gitHubContent">
+                  <img src={`${owner.avatar_url}`} alt="AvatarPFP"/>
                     <h4>Project Name: {name}</h4>
-                    <img src= {avatar_url}/>
                     <p>Language Used: {language}</p>
-                    <br></br>
                     <br></br>
                     <br></br>
                     <a href={html_url}>Link to Repo</a>
