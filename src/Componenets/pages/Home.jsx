@@ -1,5 +1,4 @@
 import "./Styles/Home.css";
-import "../../picture/Mason.jpeg";
 
 function Home() {
   return (
