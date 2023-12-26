@@ -6,9 +6,8 @@ function Footer() {
   return (
     <>
     <div className="footer">
-      <footer className="Footer">
         <div className="icons">
-          <ul>
+          <ul className="flex items-center">
             <li>
               <a href="https://www.linkedin.com/in/masonmyles/">
                 <FontAwesomeIcon icon={faLinkedin} />
@@ -22,7 +21,6 @@ function Footer() {
             </li>
           </ul>
         </div>
-      </footer>
     </div>
     </>
   );

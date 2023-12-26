@@ -20,6 +20,12 @@
   margin-left: 100px;
 }
 
+.image img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+}
+
 .skills {
   margin-top: 60px;
   text-align: center;
