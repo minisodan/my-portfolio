@@ -7,7 +7,7 @@ function Footer() {
     <>
     <div className="footer">
         <div className="icons">
-          <ul className="flex items-center">
+          <ul>
             <li>
               <a href="https://www.linkedin.com/in/masonmyles/">
                 <FontAwesomeIcon icon={faLinkedin} />
