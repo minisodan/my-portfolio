@@ -5,23 +5,23 @@ function Home() {
     <div className="homeParent">
       <div className="flex w-full justify-center gap-24 items-center">
       <div>
-          <h2>Welcome to my website</h2>
+          <h2>Mason Myles</h2>
             <h1>Backend Software Engineer</h1>
             <div className="skills">
               <h3>Current Skills</h3>
               <ul className="list">
-                <li>- React</li>
-                <li>- HTML5</li>
-                <li>- CSS</li>
-                <li>- JavaScript</li>
-                <li>- Java</li>
-                <li>- C#</li>
+                <li>React</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C#</li>
               </ul>
               <ul>
-                <li>- SQL</li>
-                <li>- LINQ</li>
-                <li>- .NET</li>
-                <li>- SpringBoot</li>
+                <li>SQL</li>
+                <li>LINQ</li>
+                <li>.NET</li>
+                <li>SpringBoot</li>
               </ul>
             </div>
           </div>
