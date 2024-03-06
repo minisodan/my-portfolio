@@ -1,13 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: bold;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1.17rem;
+}
+
+a{
+  width: 150px;
+  color: #d99330;
 }
