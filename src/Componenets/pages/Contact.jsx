@@ -10,12 +10,10 @@ function Contact() {
 
       <div className="contact button">
         <li>
-          <a className="fa-2xl" href="https://www.facebook.com/profile.php?id=100010409719044">
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
-        </li>
-        <li>
-        <a className="fa-2xl" href="mailto: mylesmasonn2gmail.com? subject=subject Text">
+          <a
+            className="fa-2xl"
+            href="mailto: mylesmasonn@gmail.com? subject=subject Text"
+          >
             <FontAwesomeIcon icon={faGoogle} />
           </a>
         </li>
