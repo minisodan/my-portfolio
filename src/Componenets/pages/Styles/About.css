@@ -1,18 +1,17 @@
-.aboutContent{
-    height: auto;
-    justify-content: left;
-    margin: auto;
-    margin-top: 75px;
+.aboutContent {
+  height: auto;
+  justify-content: left;
+  margin: auto;
+  margin-top: 4.688rem;
 }
 
-.aboutContent h1{
-    margin-left: 50px;
-    text-align: center;
+.aboutContent h1 {
+  margin-left: 3.125rem;
+  text-align: center;
 }
 
 .aboutContent p {
-    margin-left: 50px;
-    text-align: center;
-    font-size: 1rem;
+  margin-left: 3.125rem;
+  text-align: center;
+  font-size: 1rem;
 }
-  
