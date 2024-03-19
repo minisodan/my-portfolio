@@ -2,47 +2,6 @@
   box-sizing: border-box;
 }
 
-Body {
-  margin: 0;
-}
-
-.button {
-  list-style: none;
-  display: flex;
-  margin-left: 2.5rem;
-}
-
-.nav {
-  background-color: transparent;
-  font-size: large;
-  font-family: "consolas", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem;
-}
-.navItems {
-  display: flex;
-  float: right;
-  margin-right: 7.813rem;
-}
 .Brand {
-  float: left;
-  margin-left: 3.125rem;
-  font-size: 1.25rem;
-  margin-top: 0.75rem;
   font-family: "Merriweather", serif;
-}
-
-.nav ul {
-  padding: 0;
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.938rem;
-  margin-top: 1.063rem;
-}
-
-.nav Link {
-  color: inherit;
 }
