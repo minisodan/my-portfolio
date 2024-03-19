@@ -1,10 +1,8 @@
 .users {
-  display: grid;
-  grid-template-columns: 25rem 25rem 25rem 25rem;
   align-content: center;
-  grid-gap: 0.7rem;
+  grid-gap: 0.5rem;
   margin: auto;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {

@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
-  const resumeUrl = "https://docs.google.com/document/d/e/2PACX-1vTbqCWjtAJq6kojDO9fGng206v4jc-2Za9agOSDsc0P9lHG7PoxIxla7r9XULOgKPcPbRBsFe_4HNiV/pub";
+  const resumeUrl =
+    "https://drive.google.com/file/d/1sancvf_dwRP-X40qa5S80kxq0rsVtgcs/view?usp=sharing";
   return (
     <nav className="nav">
       <div className="Brand">
@@ -22,7 +23,10 @@ function NavBar() {
         </ul>
         <div className="button">
           <li>
-            <a href={resumeUrl} className="btn btn-accent btn-outline btn-med">
+            <a
+              href={resumeUrl}
+              className="btn btn-accent btn-outline hover:bg-gray-700 font-bold py-2 px-4 rounded-full"
+            >
               Resume
             </a>
           </li>

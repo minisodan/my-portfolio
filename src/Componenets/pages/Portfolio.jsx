@@ -18,11 +18,10 @@ const Portfolio = () => {
   /** make new branch */
   return (
     <>
-      <div className="repoCards">
-        <div className="repoCard">
-          <h3>Projects</h3>
-          <br></br>
-          <ul className="users">
+      <h3>Projects</h3>
+      <div className="repoCards flex ">
+        <div className="repoCard m-5">
+          <ul className="users grid grid-cols-4 gap-4 ">
             {repos.map((user) => {
               const { id, name, html_url, language, owner } = user;
               return (
