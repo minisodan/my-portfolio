@@ -83,35 +83,6 @@ function NavBar() {
         </div>
       </div>
     </nav>
-
-    // <nav className="nav">
-    // <div className="Brand">
-    //   <Link to="/">Mason Myles</Link>
-    // </div>
-    //   <div className="navItems">
-    //     <ul>
-    //       <li>
-    //         <Link to="/about">About</Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/portfolio">Portfolio</Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/contact">Contact Me</Link>
-    //       </li>
-    //     </ul>
-    //     <div className="button">
-    // <li>
-    //   <a
-    //     href={resumeUrl}
-    //     className="btn btn-accent btn-outline hover:bg-gray-700 font-bold py-2 px-4 rounded-full"
-    //   >
-    //     Resume
-    //   </a>
-    // </li>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
 
