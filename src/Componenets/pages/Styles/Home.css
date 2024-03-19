@@ -2,32 +2,32 @@
   height: auto;
   justify-content: left;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 4.688rem;
 }
 
-.homeParent h1{
-  margin-left: 50px;
+.homeParent h1 {
+  margin-left: 3.125rem;
   text-align: center;
 }
 
-.homeParent h2{
-  margin-left: 50px;
+.homeParent h2 {
+  margin-left: 3.125rem;
   text-align: center;
 }
 
 .child {
-  margin-top: 5px;
-  margin-left: 100px;
+  margin-top: 0.313rem;
+  margin-left: 6.25rem;
 }
 
 .image img {
   object-fit: cover;
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
 }
 
 .skills {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   text-align: center;
 }
 
