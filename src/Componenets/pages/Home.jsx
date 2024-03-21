@@ -2,31 +2,31 @@ import "./Styles/Home.css";
 
 function Home() {
   return (
-    <div className="homeParent">
-      <div className="flex w-full justify-center gap-24 items-center">
-      <div>
+    <div className="homeParent h-screen justify-center items-center rounded-lg shadow">
+      <div className="flex w-full justify-center gap-24 items-center my-15 p-20">
+        <div>
           <h2>Mason Myles</h2>
-            <h1>Backend Software Engineer</h1>
-            <div className="skills">
-              <h3>Current Skills</h3>
-              <ul className="list">
-                <li>React</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>C#</li>
-              </ul>
-              <ul>
-                <li>SQL</li>
-                <li>LINQ</li>
-                <li>.NET</li>
-                <li>SpringBoot</li>
-              </ul>
-            </div>
+          <h1>Backend Software Engineer</h1>
+          <div className="skills">
+            <h3>Current Skills</h3>
+            <ul className="list">
+              <li>React</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>C#</li>
+            </ul>
+            <ul>
+              <li>SQL</li>
+              <li>LINQ</li>
+              <li>.NET</li>
+              <li>SpringBoot</li>
+            </ul>
           </div>
+        </div>
         <div className="image overflow-hidden rounded-full">
-          <img src="picture/Mason.jpeg" alt="image"/>
+          <img src="picture/Mason.jpeg" alt="image" />
         </div>
       </div>
     </div>
