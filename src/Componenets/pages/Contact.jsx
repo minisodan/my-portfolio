@@ -8,7 +8,6 @@ function Contact() {
     <div className="h-screen">
       <div className="parent items-center my-20 p-20">
         <h1>Feel free to connect with me!</h1>
-
         <div className="contact button">
           <li>
             <a
