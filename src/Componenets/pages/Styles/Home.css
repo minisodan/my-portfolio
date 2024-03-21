@@ -1,18 +1,9 @@
-.homeParent {
-  height: auto;
-  justify-content: left;
-  margin: auto;
-  margin-top: 4.688rem;
-}
-
 .homeParent h1 {
   margin-left: 3.125rem;
-  text-align: center;
 }
 
 .homeParent h2 {
   margin-left: 3.125rem;
-  text-align: center;
 }
 
 .child {
