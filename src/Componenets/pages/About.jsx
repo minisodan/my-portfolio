@@ -2,8 +2,8 @@ import "./Styles/About.css";
 
 function About() {
   return (
-    <div className="h-screen justify-center items-center rounded-lg shadow">
-      <div className="aboutContent">
+    <div className="justify-center items-center rounded-lg shadow">
+      <div className="aboutContent min-h-screen">
         <h1>About</h1>
         <div className="m-72">
           <p>
