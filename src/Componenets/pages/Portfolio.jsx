@@ -19,8 +19,8 @@ const Portfolio = () => {
   return (
     <>
       <h3>Projects</h3>
-      <div className="repoCards container flex">
-        <div className="repoCard container m-20 min-h-screen">
+      <div className="repoCards flex">
+        <div className="repoCard m-20 min-h-screen">
           <ul className="users grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
             {repos.map((user) => {
               const { id, name, html_url, language, owner } = user;
