@@ -19,9 +19,9 @@ const Portfolio = () => {
   return (
     <>
       <h3>Projects</h3>
-      <div className="repoCards container flex">
-        <div className="repoCard container m-20 min-h-screen">
-          <ul className="users grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-5">
+      <div className="repoCards flex justify-center max-h-screen">
+        <div className="repoCard container m-20 content-center">
+          <ul className="users grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
             {repos.map((user) => {
               const { id, name, html_url, language, owner } = user;
               return (
@@ -34,19 +34,15 @@ const Portfolio = () => {
                       href={html_url}
                       className="w-fit border rounded-lg border-gray-900 p-5 shadow hover:bg-gray-700 delay-100 duration-200"
                     >
-                      <div className="flex flex-row">
+                      <div className="flex flex-row h-max text-xs">
                         <img
                           src={`${owner.avatar_url}`}
                           alt="Avatar jpeg"
                           className="rounded"
                         />
-                        <p className="ml-3">
-                          <span className="text-zinc-200 font-semibold">
-                            {name}/
-                          </span>
-                          <span className="text-zinc-200 font-semibold">
-                            {language}
-                          </span>
+                        <p className="ml-1 text-wrap font-semibold">
+                          <span className="text-zinc-200">{name}/</span>
+                          <span className="text-zinc-200">{language}</span>
                         </p>
                       </div>
                       <p className="text-xs text-zinc-200 mt-3">

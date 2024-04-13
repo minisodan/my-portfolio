@@ -2,7 +2,7 @@ import "./Styles/About.css";
 
 function About() {
   return (
-    <div className="justify-center items-center rounded-lg shadow">
+    <div className="flex justify-center max-h-screen items-center rounded-lg shadow">
       <div className="aboutContent min-h-screen">
         <h1>About</h1>
         <div className="m-72">

@@ -2,7 +2,7 @@ import "./Styles/Home.css";
 
 function Home() {
   return (
-    <div className="homeParent rounded-lg shadow">
+    <div className="homeParent flex justify-center max-h-screen rounded-lg shadow">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 w-full justify-center gap-2 items-center p-16 min-h-screen place-items-center">
         <div className="image w-96 h-96 overflow-hidden rounded-full">
           <img src="picture/Mason.jpeg" alt="image" />

@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Contact() {
   const twitter = <FontAwesomeIcon icon="fa-brands fa-twitter" />;
   return (
-    <div className="">
-      <div className="parent items-center my-20 p-20 min-h-screen">
+    <div className="flex justify-center min-h-screen">
+      <div className="parent items-center my-20 p-20">
         <h1>Feel free to connect with me!</h1>
         <div className="contact button">
           <li>
