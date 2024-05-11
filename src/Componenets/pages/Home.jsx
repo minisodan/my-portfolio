@@ -18,12 +18,17 @@ function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 md:p-0">
+    <div className="min-h-screen flex items-center justify-center p-2 ml-8 mt-4 md:p-0">
       <div className="max-w-6xl w-full flex flex-col md:flex-row justify-center md:space-x-8">
         {/* Profile Card */}
         <div
-          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center"
-          style={{ backgroundColor: "#33292f", width: "34.545rem" }}
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center justify-center"
+          style={{
+            backgroundColor: "#33292f",
+            width: "90%", // Change width to 90% for mobile view
+            marginBottom: "2rem",
+            maxWidth: "34.545rem", // Set maximum width for larger screens
+          }}
         >
           <div className="mb-4">
             <img
@@ -69,8 +74,14 @@ function Home() {
         </div>
         {/* Featured Project Card */}
         <div
-          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center"
-          style={{ backgroundColor: "#33292f", width: "550px" }}
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center justify-center"
+          style={{
+            backgroundColor: "#33292f",
+            width: "90%", // Change width to 90% for mobile view
+            marginBottom: "2rem",
+            maxWidth: "34.545rem", // Set maximum width for larger screens
+            padding: "2rem", // Add more padding for mobile version
+          }}
         >
           <h2 className="text-2xl font-bold mb-4" style={{ color: "inherit" }}>
             Featured Project
@@ -80,10 +91,12 @@ function Home() {
               <img
                 src={featuredRepo.owner.avatar_url}
                 alt="Project"
-                className="rounded-full h-60 w-60 m-2"
+                className="rounded-full h-60 w-60 m-3"
               />
-              <h3>{featuredRepo.name}</h3>
-              <p style={{ color: "inherit" }}>{featuredRepo.description}</p>
+              <h3 className="text-lg">{featuredRepo.name}</h3>
+              <p style={{ color: "inherit", fontSize: "1.2rem" }}>
+                {featuredRepo.description}
+              </p>
             </div>
           )}
           <div className="mt-8 text-center">
