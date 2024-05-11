@@ -1,29 +1,8 @@
-.parent {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.text-black {
+  color: black;
 }
 
-.child {
-  width: 31.25rem;
-  height: auto;
-}
-
-.contact {
-  margin: 0;
-  margin-top: 0.625rem;
-  justify-content: center;
-}
-
-h1 {
-  margin-bottom: 0.625rem;
-}
-
-.contact li {
-  padding-left: 1.25rem;
-}
-
-.contact a {
-  width: 9.375rem;
-  color: #d99330;
+.label-text {
+  color: inherit;
+  font-size: large;
 }

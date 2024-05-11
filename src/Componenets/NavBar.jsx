@@ -1,155 +1,127 @@
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import "./NavBar.css";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import React, { useEffect } from "react";
+import Logo from "../Logo/Logo2.png";
 
 function NavBar() {
   const resumeUrl =
     "https://drive.google.com/file/d/1sancvf_dwRP-X40qa5S80kxq0rsVtgcs/view?usp=sharing";
-  // return (
-  //   <nav class="bg-transparent">
-  //     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  //       <Link
-  //         className="Brand flex items-center space-x-4 rtl:space-x-reverse"
-  //         to="/"
-  //       >
-  //         <span class="self-center text-xl font-semibold whitespace-nowrap">
-  //           Mason Myles
-  //         </span>
-  //       </Link>
-  //       <button
-  //         data-collapse-toggle="navbar-default"
-  //         type="button"
-  //         class="inline-flex items-center p-2 w-10 h-10 justify-center md:bg-trasparent text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-  //         aria-controls="navbar-default"
-  //         aria-expanded="false"
-  //       >
-  //         <span class="sr-only">Open main menu</span>
-  //         <svg
-  //           class="w-5 h-5"
-  //           aria-hidden="true"
-  //           xmlns="http://www.w3.org/2000/svg"
-  //           fill="none"
-  //           viewBox="0 0 17 14"
-  //         >
-  //           <path
-  //             stroke="currentColor"
-  //             stroke-linecap="round"
-  //             stroke-linejoin="round"
-  //             stroke-width="2"
-  //             d="M1 1h15M1 7h15M1 13h15"
-  //           />
-  //         </svg>
-  //       </button>
-  //       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-  //         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-  //           <li className="md:py-4">
-  //             <Link
-  //               className="my-5 md:p-0 bg-transparent rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-  //               to="/about"
-  //               aria-current="page"
-  //               style={{ color: "#d99330" }}
-  //             >
-  //               About
-  //             </Link>
-  //           </li>
-  //           <li className="md:py-4">
-  //             <Link
-  //               className="my-5 md:p-0 text-white rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-  //               to="/portfolio"
-  //               aria-current="page"
-  //               style={{ color: "#d99330" }}
-  //             >
-  //               Portfolio
-  //             </Link>
-  //           </li>
-  //           <li className="md:py-4">
-  //             <Link
-  //               className="my-5 md:p-0 text-white rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-  //               to="/contact"
-  //               aria-current="page"
-  //               style={{ color: "#d99330" }}
-  //             >
-  //               Contact
-  //             </Link>
-  //           </li>
-  //           <li className="md:py-4">
-  //             <a
-  //               href={resumeUrl}
-  //               className="btn btn-accent btn-outline hover:bg-gray-700 font-bold py-2 px-4 rounded-full"
-  //             >
-  //               Resume
-  //             </a>
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     </div>
-  //   </nav>
-  // );
 
-  const [isOpen, setIsOpen] = useState(false);
+  const navigation = [
+    { name: "Mason Myles", href: "/", current: true },
+    { name: "About", href: "/about", current: false },
+    { name: "Projects", href: "/portfolio", current: false },
+    { name: "Contact", href: "/contact", current: false },
+    { name: "Resume", href: resumeUrl, current: false },
+  ];
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = Logo;
+  }, []);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72"></div>
-      <div className="block lg:hidden">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
-        >
-          <svg
-            className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-          <svg
-            className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-          </svg>
-        </button>
-      </div>
-      <div
-        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-          isOpen ? "block" : "hidden"
-        }`}
-      >
-        <div className="text-sm lg:flex-grow">
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            First Link
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            Second Link
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            Third Link
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            Fourth Link
-          </a>
-        </div>
-        <div>
-          <button className="inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white">
-            Click Me
-          </button>
-        </div>
-      </div>
-    </nav>
+    <Disclosure
+      as="nav"
+      className="bg-transparent"
+      style={{ color: "#d99330", fontFamily: "Merriweather, serif" }}
+    >
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="flex-shrink-0 mr-2">
+                {open ? null : (
+                  <img src={Logo} alt="Company Logo" className="h-8 w-auto" />
+                )}
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
+                  <a href={navigation[0].href}>
+                    <span
+                      className="text-lg font-bold"
+                      style={{ color: "#d99330" }}
+                    >
+                      {navigation[0].name}
+                    </span>
+                  </a>
+                </div>
+                <div className="hidden sm:block sm:ml-auto sm:mr-6">
+                  <div className="flex space-x-4">
+                    {navigation.slice(1).map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "rounded-md px-3 py-2 text-sm font-medium",
+                          "mr-4"
+                        )}
+                        style={{
+                          color: "#d99330",
+                          ...(item.name === "Resume" && {
+                            textDecoration: "none",
+                          }),
+                        }}
+                        aria-current={item.current ? "page" : undefined}
+                        target={item.name === "Resume" ? "_blank" : undefined}
+                        rel={
+                          item.name === "Resume"
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              {navigation.slice(1).map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
+                  )}
+                  style={{ color: "#d99330" }}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   );
 }
 

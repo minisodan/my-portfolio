@@ -15,53 +15,48 @@ const Portfolio = () => {
     fetchRepos();
   }, []);
 
-  /** make new branch */
   return (
-    <>
-      <h3>Projects</h3>
-      <div className="repoCards flex">
-        <div className="repoCard m-20 min-h-screen">
-          <ul className="users grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-            {repos.map((user) => {
-              const { id, name, html_url, language, owner } = user;
-              return (
-                <li key={id}>
-                  <div
-                    className="flex items-center max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl justify-center"
-                    style={{ backgroundColor: "#33292f" }}
-                  >
-                    <a
-                      href={html_url}
-                      className="w-fit border rounded-lg border-gray-900 p-5 shadow hover:bg-gray-700 delay-100 duration-200"
-                    >
-                      <div className="flex flex-row">
-                        <img
-                          src={`${owner.avatar_url}`}
-                          alt="Avatar jpeg"
-                          className="rounded"
-                        />
-                        <p className="ml-3">
-                          <span className="text-zinc-200 font-semibold">
-                            {name}/
-                          </span>
-                          <span className="text-zinc-200 font-semibold">
-                            {language}
-                          </span>
-                        </p>
-                      </div>
-                      <p className="text-xs text-zinc-200 mt-3">
-                        A declarative, efficient, and flexible JS library for
-                        building user...
-                      </p>
-                    </a>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+    <div className="">
+      <h3 className="m-4 text-center">Projects</h3>
+      <div
+        className="repoCards flex flex-wrap justify-center "
+        style={{ margin: "-10px" }}
+      >
+        {repos.map((user) => {
+          const { id, name, html_url, language, owner, description } = user;
+          return (
+            <div
+              key={id}
+              className="m-4 max-w-md rounded-xl overflow-hidden shadow-md bg-gray-800"
+              style={{
+                backgroundColor: "#33292f",
+                width: "300px",
+                margin: "9px",
+              }}
+            >
+              <a
+                href={html_url}
+                className="block w-full h-full border border-gray-800 rounded-lg p-4 transition duration-200 hover:bg-gray-800"
+              >
+                <div className="flex items-center">
+                  <img
+                    src={`${owner.avatar_url}`}
+                    alt="Avatar jpeg"
+                    className="rounded-full h-10 w-10"
+                  />
+                  <p className="ml-3 text-white">
+                    <span className="font-semibold">{name}/</span>
+                    <span className="font-semibold">{language}</span>
+                  </p>
+                </div>
+                <p className="text-xs text-zinc-200 mt-2 px-2">{description}</p>
+              </a>
+            </div>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 };
+
 export default Portfolio;
