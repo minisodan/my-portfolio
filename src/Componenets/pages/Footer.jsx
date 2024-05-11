@@ -8,10 +8,7 @@ function Footer() {
         <div className="md:w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a
-              href="https://my-portfolio-psi-plum.vercel.app"
-              className="hover:underline"
-            >
+            <a href="https://masonmyles.vercel.app" className="hover:underline">
               Mason Myles
             </a>
             . All Rights Reserved.
