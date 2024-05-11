@@ -19,13 +19,13 @@ function Home() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:p-0">
-      <div className="max-w-6xl w-full md:flex justify-center">
+      <div className="max-w-6xl w-full flex flex-col md:flex-row justify-center md:space-x-8">
         {/* Profile Card */}
         <div
-          className="bg-white rounded-lg shadow-md p-8 md:m-4 md:w-1/2"
-          style={{ backgroundColor: "#33292f" }}
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center"
+          style={{ backgroundColor: "#33292f", width: "34.545rem" }}
         >
-          <div className="flex items-center justify-center mb-4">
+          <div className="mb-4">
             <img
               src="/picture/Mason.jpeg"
               alt="Mason Myles"
@@ -69,8 +69,8 @@ function Home() {
         </div>
         {/* Featured Project Card */}
         <div
-          className="rounded-lg shadow-md p-8 md:m-4 md:w-1/2"
-          style={{ backgroundColor: "#33292f" }}
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center"
+          style={{ backgroundColor: "#33292f", width: "550px" }}
         >
           <h2 className="text-2xl font-bold mb-4" style={{ color: "inherit" }}>
             Featured Project
@@ -78,7 +78,7 @@ function Home() {
           {featuredRepo && (
             <div className="text-center">
               <img
-                src={featuredRepo.owner.avatar_url} // You can change this to use the actual repo image if available
+                src={featuredRepo.owner.avatar_url}
                 alt="Project"
                 className="rounded-full h-60 w-60 m-2"
               />
