@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo2.png";
 
 function NavBar() {
   const resumeUrl =
-    "https://drive.google.com/file/d/1sancvf_dwRP-X40qa5S80kxq0rsVtgcs/view?usp=sharing";
+    "https://drive.google.com/file/d/1NHmHqUzOinYWDMU_AHUXvZkQ80t9LYyt/view?usp=sharing";
 
   const navigation = [
     { name: "Mason Myles", href: "/", current: true },

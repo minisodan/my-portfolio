@@ -81,36 +81,47 @@ function Home() {
             padding: "2rem",
           }}
         >
-          <h2 className="text-2xl font-bold mb-4" style={{ color: "inherit" }}>
-            Featured Project
-          </h2>
           {featuredRepo && (
             <div className="text-center">
               <img
                 src={featuredRepo.owner.avatar_url}
                 alt="Project"
                 className="rounded-full h-60 w-60 m-3"
+                style={{ margin: "auto" }}
               />
-              <h3 className="text-lg">{featuredRepo.name}</h3>
-              <p style={{ color: "inherit", fontSize: "1.2rem" }}>
+              <h2
+                className="text-2xl font-bold m-4"
+                style={{ color: "inherit" }}
+              >
+                {featuredRepo.name
+                  .toLowerCase()
+                  .replace(/\b\w/g, (c) => c.toUpperCase())}
+              </h2>
+              <p
+                style={{
+                  color: "inherit",
+                  fontSize: "1.2rem",
+                  marginBottom: "1rem",
+                }}
+              >
                 {featuredRepo.description}
               </p>
+              <div className="mt-auto">
+                <a
+                  href={featuredRepo && featuredRepo.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    className="hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                    style={{ backgroundColor: "#d99330" }}
+                  >
+                    Explore Project
+                  </button>
+                </a>
+              </div>
             </div>
           )}
-          <div className="mt-8 text-center">
-            <a
-              href={featuredRepo && featuredRepo.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                className="hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-                style={{ backgroundColor: "#d99330" }}
-              >
-                Explore Project
-              </button>
-            </a>
-          </div>
         </div>
       </div>
     </div>
