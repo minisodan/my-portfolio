@@ -16,10 +16,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="">
-      <h3 className="m-4 text-center">Projects</h3>
+    <div className="h-screen m-8">
+      <h3 className="text-center">Projects</h3>
       <div
-        className="repoCards flex flex-wrap justify-center "
+        className="repoCards flex flex-wrap justify-center m-8"
         style={{ margin: "-10px" }}
       >
         {repos.map((user) => {

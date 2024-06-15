@@ -28,7 +28,7 @@ function NavBar() {
     <Disclosure
       as="nav"
       className="bg-transparent"
-      style={{ color: "#d99330", fontFamily: "Merriweather, serif" }}
+      style={{ color: "#d99330" }}
     >
       {({ open }) => (
         <>
