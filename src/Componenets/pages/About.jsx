@@ -25,7 +25,7 @@ function Card({ title, content }) {
 
 function About() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <h3 className="m-4 text-center">About Me</h3>
       <div className="flex flex-wrap justify-center px-4">
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 px-2">

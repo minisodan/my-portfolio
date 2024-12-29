@@ -4,15 +4,12 @@ import React, { useEffect } from "react";
 import Logo from "../Logo/Logo2.png";
 
 function NavBar() {
-  const resumeUrl =
-    "https://drive.google.com/file/d/1NHmHqUzOinYWDMU_AHUXvZkQ80t9LYyt/view?usp=sharing";
-
   const navigation = [
     { name: "Mason Myles", href: "/", current: true },
     { name: "About", href: "/about", current: false },
     { name: "Projects", href: "/portfolio", current: false },
     { name: "Contact", href: "/contact", current: false },
-    { name: "Resume", href: resumeUrl, current: false },
+    { name: "Resume", href: "/picture/MasonMylesResume.jpg", current: false },
   ];
 
   function classNames(...classes) {
